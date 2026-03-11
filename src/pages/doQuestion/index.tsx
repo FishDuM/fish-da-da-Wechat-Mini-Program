@@ -35,8 +35,6 @@ export default () =>{
       <View className='at-article__h1 title'>
         {current}、{question.title}
       </View>
-      {current}
-      {JSON.stringify(answerList)}
       <AtRadio className="question" options={questionOptions} value={currentAnswer} onClick={(value) => {  answerList[current - 1] = value; setCurrentAnswer(answerList[ current - 1]); }} />
       { current !==1 &&  (<AtButton className='controlBtn' circle onClick={() => { setCurrent(current - 1)}}>上一题</AtButton>)}
       { current === questions.length && (<AtButton type='primary' className='controlBtn' circle onClick={() => {
