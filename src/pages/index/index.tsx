@@ -5,6 +5,9 @@ import './index.scss'
 import image from "../../image/image.png"
 import GlobalFooter from "../../component/GlobalFooter";
 
+/**
+ * 主页
+ */
 export default () =>{
   return (
     <View className='indexPage'>
